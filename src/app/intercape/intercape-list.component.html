@@ -1,0 +1,207 @@
+<!-- code for form starts here -->
+<section class="mainSect">
+    <div class="container">
+        <form [formGroup]="form1" (ngSubmit)="onProceed(form1.value)">
+            <ul class="row resultsRow">
+                <li class="col-12 mb-5 myResult">
+                    <div class="row myResultInn">
+                        <div
+                            class="col-2 co-sm-2 col-md-2 col-lg-1 col-xl-2 d-flex justify-content-center align-items-center myResultInnLeft">
+                            <img src="../assets/img/busavatar.jpg" srcset="
+                  ../assets/img/busavatar@2x.jpg 2x,
+                  ../assets/img/busavatar@3x.jpg 3x
+                " class="img-fluid" />
+                        </div>
+                        <div class="col-10 co-sm-10 col-md-5 col-lg-7 col-xl-7 myResultInnMid">
+                            <div class="row">
+                                <div class="col-12 myResultMidInnTop">
+                                    <h6>Express HRE via JHB - CT 3368</h6>
+                                </div>
+                                <div class="col-12 myResultMidInnBtm">
+                                    <div class="d-flex justify-content-between text-center">
+                                        <p>
+                                            Sep 10 2019 - 13:20 Hrs<br /><span>Jonhannesburg</span>
+                                        </p>
+                                        <p class="d-flex align-items-center text-center mx-2">
+                                            <img src="../assets/img/arrow.png" alt="" />
+                                        </p>
+
+                                        <p>Sep 10 2019 - 13:20 Hrs<br /><span>Cape Town</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 co-sm-12 col-md-5 col-lg-4 col-xl-3 myResultInnRight">
+                            <div class="d-flex align-content-stretch flex-column">
+                                <div
+                                    class="d-flex align-items-center align-self-stretch justify-content-between myResultInnRightR">
+                                    <label class="busRadio">Full Flexi
+                                        <input type="radio" formControlName="radioOne" value="Full Flexi"
+                                            checked="checked" name="radioOne" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="busRadio">Flexi
+                                        <input type="radio" formControlName="radioOne" value="Flexi" name="radioOne" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center align-self-stretch justify-content-between myResultInnRightR">
+                                    <span class="d-flex align-items-center mr-2">
+                                        <h1>R560.00</h1>
+                                    </span>
+                                    <span><button type="button" data-toggle="collapse" data-target="#resultOne"
+                                            aria-expanded="false" class="btn btn-primary btn-block primaryBg">
+                                            BOOK
+                                        </button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center collapse myCollapse" id="resultOne">
+                        <div class="col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 moreResult">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 moreResultInn">
+                                    <h4>Available Discounts (please select)</h4>
+                                    <div class="discountsList">
+                                        <label class="busRadio">15% Off - Children Discount (1-11 years with adult)
+                                            <input type="radio" formControlName="radioTwo" value="Child with Parent"
+                                                checked="checked" name="radioTwo" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="busRadio">15% Off - Senior Citizen ID Number is required
+                                            <input type="radio" formControlName="radioTwo" value="Senior Cetizen"
+                                                name="radioTwo" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="busRadio">5% Off - Student Discount Student Card Number Required.
+                                            The Card must be presented upon boarding the coach.
+                                            <input type="radio" formControlName="radioTwo" value="Student"
+                                                name="radioTwo" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-2 col-lg-4 col-xl-4 moreResultInn">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <label for="" class="dateOfBirth">Enter Date of Birth</label>
+                                            <input type="date" class="form-control inputsForm inputsFormTwo"
+                                                id="dateofBirth" placeholder="Date of Birth" name="dateofBirth"
+                                                formControlName="dateofBirth" required />
+                                        </div>
+                                        <div class="">
+                                            <button type="submit" data-toggle="collapse" data-target="#resultOne"
+                                                aria-expanded="false"
+                                                class="btn btn-primary btn-block proBtn primaryBg">
+                                                Proceed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-12 mb-5 myResult">
+                    <div class="row myResultInn">
+                        <div
+                            class="col-2 co-sm-2 col-md-2 col-lg-1 col-xl-2 d-flex justify-content-center align-items-center myResultInnLeft">
+                            <img src="../assets/img/busavatar.jpg" srcset="
+                                                  ../assets/img/busavatar@2x.jpg 2x,
+                                                  ../assets/img/busavatar@3x.jpg 3x
+                                                " class="img-fluid" />
+                        </div>
+                        <div class="col-10 co-sm-10 col-md-5 col-lg-7 col-xl-7 myResultInnMid">
+                            <div class="row">
+                                <div class="col-12 myResultMidInnTop">
+                                    <h6>Express HRE via JHB - CT 3368</h6>
+                                </div>
+                                <div class="col-12 myResultMidInnBtm">
+                                    <div class="d-flex justify-content-between text-center">
+                                        <p>
+                                            Sep 10 2019 - 13:20 Hrs<br /><span>Jonhannesburg</span>
+                                        </p>
+                                        <p class="d-flex align-items-center text-center mx-2">
+                                            <img src="../assets/img/arrow.png" alt="" />
+                                        </p>
+
+                                        <p>Sep 10 2019 - 13:20 Hrs<br /><span>Cape Town</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 co-sm-12 col-md-5 col-lg-4 col-xl-3 myResultInnRight">
+                            <div class="d-flex align-content-stretch flex-column">
+                                <div
+                                    class="d-flex align-items-center align-self-stretch justify-content-between myResultInnRightR">
+                                    <label class="busRadio">Full Flexi
+                                        <input type="radio" formControlName="radioOne2" value=""
+                                            checked="checked" name="radioOne" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="busRadio">Flexi
+                                        <input type="radio" formControlName="radioOne" value="" name="radioOne2" />
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center align-self-stretch justify-content-between myResultInnRightR">
+                                    <span class="d-flex align-items-center mr-2">
+                                        <h1>R560.00</h1>
+                                    </span>
+                                    <span><button type="button" data-toggle="collapse" data-target="#resultTwo"
+                                            aria-expanded="false" class="btn btn-primary btn-block primaryBg">
+                                            BOOK
+                                        </button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center collapse myCollapse" id="resultTwo">
+                        <div class="col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 moreResult">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 moreResultInn">
+                                    <h4>Available Discounts (please select)</h4>
+                                    <div class="discountsList">
+                                        <label class="busRadio">15% Off - Children Discount (1-11 years with adult)
+                                            <input type="radio" formControlName="radioTwo2" value=""
+                                                checked="checked" name="radioTwo" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="busRadio">15% Off - Senior Citizen ID Number is required
+                                            <input type="radio" formControlName="radioTwo2" value=""
+                                                name="radioTwo" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="busRadio">5% Off - Student Discount Student Card Number Required.
+                                            The Card must be presented upon boarding the coach.
+                                            <input type="radio" formControlName="radioTwo2" value=""
+                                                name="radioTwo" />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-2 col-lg-4 col-xl-4 moreResultInn">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <label for="" class="dateOfBirth">Enter Date of Birth</label>
+                                            <input type="date" class="form-control inputsForm inputsFormTwo"
+                                                id="dateofBirth" placeholder="Date of Birth" name="dateofBirth"
+                                                formControlName="dateofBirth" required />
+                                        </div>
+                                        <div class="">
+                                            <button type="submit" data-toggle="collapse" data-target="#resultTwo"
+                                                aria-expanded="false"
+                                                class="btn btn-primary btn-block proBtn primaryBg">
+                                                Proceed</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+</section>

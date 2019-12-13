@@ -1,0 +1,50 @@
+<!-- code for form starts here -->
+<section class="mainSect">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                <img src="../assets/img/intercape.png" srcset="../assets/img/intercape@2x.png 2x, ../assets/img/intercape@3x.png 3x"
+                    class="img-fluid">
+            </div>
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                <div class="row">
+                    <div class="col-12 formTop">
+                        <h3>Intercape Pay</h3>
+                        <div class="upDivider"></div>
+                        <p>You have selected Intercape Pay. Please provide more details below to continue with the
+                            check out process.</p>
+                    </div>
+                </div>
+                <form [formGroup]="form1" (ngSubmit)="onSearch(form1.value)" method="post" class="formContainer row">
+                    <div class="col-12 col-sm-6 col-md-3 form-group myInputs">
+                        <label for="LeavingFrom">Leaving From</label>
+                        <select class="form-control inputsForm" id="leavingFrom" name="leavingFrom" formControlName="leavingFrom" required>
+                            <option disabled selected>Leaving From</option>
+                            <option value="capetown">Capetown</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 form-group myInputs">
+                        <label for="Destination">Destination</label>
+                        <select class="form-control inputsForm" id="Destination" name="destination" formControlName="destination" required>
+                            <option disabled selected>Destination</option>
+                            <option value="johanesburg">Jo'burg</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 form-group myInputs">
+                        <label for="DepartureDate">Departure Date</label>
+                        <input type="date" class="form-control inputsForm" id="departureDate"
+                            placeholder="Departure Date" name="departureDate" formControlName="departureDate" required>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <button type="submit" class="btn btn-danger btn-block infoBg">SEARCH</button>
+                    </div>
+                    <div class="col-12">
+                        <div class="divider"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<app-intercape-list></app-intercape-list>
+<!-- code for form ends here -->

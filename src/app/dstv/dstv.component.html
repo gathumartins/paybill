@@ -1,0 +1,71 @@
+<!-- code for form starts here -->
+<section class="mainSect">
+    <div class="container">
+        <div class="row">
+            <div class="col-2 col-sm-2 col-md-2 col-lg-2">
+                <img src="../../assets/img/tv.png" srcset="../../assets/img/tv@2x.png 2x, ../../assets/img/tv@3x.png 3x" class="img-fluid">
+            </div>
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                <div class="row">
+                    <div class="col-12 formTop">
+                        <h3>DSTV Digital TV</h3>
+                        <div class="upDivider"></div>
+                        <p>You have selected DsTv Bill. Please provide more details below to continue with the check
+                            out process</p>
+                    </div>
+                </div>
+                <form [formGroup]="form1" (ngSubmit)="onSubmit(form1.value)" method="post" id="form1" class="formContainer row">
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="bill_to_surname">First Name</label>
+                        <input type="text" name="bill_to_surname" class="form-control inputsForm" id="bill_to_surname"
+                            placeholder="First Name" formControlName="bill_to_surname" required>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="bill_to_forename">Last Name</label>
+                        <input type="text" name="bill_to_forename" class="form-control inputsForm" id="bill_to_forename"
+                            placeholder="Last Name" formControlName="bill_to_forename" required>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="bill_to_email">Email Address</label>
+                        <input type="email" name="bill_to_email" class="form-control inputsForm" id="bill_to_email"
+                            placeholder="Email Address" formControlName="bill_to_email" required>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="AccountNo">SmartCard No </label>
+                        <input type="text" name="AccountNo" class="form-control inputsForm" id="AccountNo"
+                            placeholder="SmartCard No" formControlName="AccountNo" required>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="TopUpNo">Phone Number</label>
+                        <input type="tel" name="TopUpNo" class="form-control inputsForm" id="TopUpNo" placeholder="+2677........." formControlName="TopUpNo" required>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="amount">Amount in BWP</label>
+                        <input type="number" name="amount" class="form-control inputsForm" id="amount" min="1" placeholder="Enter Amount" formControlName="amount" required>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="TransationType">Transation Type</label>
+                        <select class="form-control inputsForm" id="cboTranType" name="cboTranType" formControlName="cboTranType" required>
+                            <option value="dstv">DSTV Payments</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 form-group myInputs">
+                        <label for="reference_number">Reference Number</label>
+                        <input type="number" name="reference_number" value="071119090221"
+                            class="form-control inputsForm" id="reference_number" [readonly]="true" formControlName="reference_number" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="divider"></div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between">
+                        <button type="reset" name="Reset" value="Cancel"
+                            class="btn btn-outline-primary primaryOut">CANCEL</button>
+                        <button type="submit" name="Button1" value="Submit" id="Button1"
+                            class="btn btn-primary primaryBg">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- code for form ends here -->
